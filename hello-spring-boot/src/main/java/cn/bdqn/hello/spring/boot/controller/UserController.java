@@ -21,6 +21,7 @@ public class UserController {
         List<SmbmsUser> userList = userService.getUserList();
         model.addAttribute("userlist",userList);
         System.out.print("hahahha");
+        System.out.println("你好吗？");
         return  "index";
     }
     //根据id查询所有的用户信息
