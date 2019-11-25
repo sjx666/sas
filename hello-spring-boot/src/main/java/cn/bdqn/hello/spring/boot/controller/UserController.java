@@ -22,6 +22,7 @@ public class UserController {
         model.addAttribute("userlist",userList);
         System.out.print("hahahha");
         System.out.println("你好吗？");
+        System.out.println("ss");
         return  "index";
     }
     //根据id查询所有的用户信息
