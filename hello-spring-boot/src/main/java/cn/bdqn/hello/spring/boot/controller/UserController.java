@@ -20,6 +20,7 @@ public class UserController {
     public String saHai(Model model){
         List<SmbmsUser> userList = userService.getUserList();
         model.addAttribute("userlist",userList);
+        System.out.print("hahahha");
         return  "index";
     }
     //根据id查询所有的用户信息
