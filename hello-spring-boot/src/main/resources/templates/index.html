@@ -1,0 +1,37 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Thymeleaf</title>
+</head>
+<body>
+<div>
+
+</div>
+ <form action="ds" method="get">
+     <input type="text" name="id">
+     <input type="submit" value="提交">
+
+
+ </form>
+<div>
+    <a href="adds">添加用户</a>
+    <span>访问列表</span>
+    <table>
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="human : ${userlist}">
+            <td th:text="${human.username}"></td>
+            <td th:text="${human.usercode}"></td>
+            <td th:text="${human.id}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bdqn.hello.spring.boot.dao.SmbmsBillMapper">
+  <resultMap id="BaseResultMap" type="cn.bdqn.hello.spring.boot.entity.SmbmsBill">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="billCode" jdbcType="VARCHAR" property="billcode" />
+    <result column="productName" jdbcType="VARCHAR" property="productname" />
+    <result column="productDesc" jdbcType="VARCHAR" property="productdesc" />
+    <result column="productUnit" jdbcType="VARCHAR" property="productunit" />
+    <result column="productCount" jdbcType="DECIMAL" property="productcount" />
+    <result column="totalPrice" jdbcType="DECIMAL" property="totalprice" />
+    <result column="isPayment" jdbcType="INTEGER" property="ispayment" />
+    <result column="createdBy" jdbcType="BIGINT" property="createdby" />
+    <result column="creationDate" jdbcType="TIMESTAMP" property="creationdate" />
+    <result column="modifyBy" jdbcType="BIGINT" property="modifyby" />
+    <result column="modifyDate" jdbcType="TIMESTAMP" property="modifydate" />
+    <result column="providerId" jdbcType="BIGINT" property="providerid" />
+  </resultMap>
+</mapper>
